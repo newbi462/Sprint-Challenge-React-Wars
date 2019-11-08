@@ -31,10 +31,13 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 ##### Answer: to disect a page into pieces and build those pieces in a reusable way using state with for thought for efficiently...
 
 - [ ] Describe state.
+##### Answer: A variable/component that holds things we want to change/store/use in react to render or manipulate in a dynamic way
 
 - [ ] Describe props.
+##### Answer: a parameter or variable we pass from one file to another though a function(forget the react for for the <Name />) so it can be accessed and returned there.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+##### Answer: an effect like ```useEffect``` where we want to run something like axios on the side so it wont refresh every time, and we limit how it syncs by defining when it will with the ```},[])``` parameters on the end of it.
 
 ## Project Set Up
 
