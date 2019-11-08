@@ -6,7 +6,7 @@ import './App.css';
 
 
 import CharacterCard from "./CharacterCard";
-
+import PageButtons from "./PageButtons";
 
 const ForceFlex = styled.div`
   display: flex
@@ -42,6 +42,7 @@ const App = () => {
       <ForceFlex>
         <CharacterCard propsName={apiData} />
       </ForceFlex>
+      <PageButtons propsName={number} setPropsName={setNumber}  />
     </div>
   );
 }

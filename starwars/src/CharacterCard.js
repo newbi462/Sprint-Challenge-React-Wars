@@ -14,6 +14,7 @@ const CharCards = styled.div`
 
   &:hover {
     transform: translate(-5px) scale(1.15);
+    border: solid 3px #18cae6;
   }
 `;
 
