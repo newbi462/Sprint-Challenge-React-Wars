@@ -1,6 +1,19 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
+
+import styled from "styled-components";
 import './App.css';
+
+
+import CharacterCard from "./CharacterCard";
+
+
+const ForceFlex = styled.div`
+  display: flex
+  flex-flow: row wrap;
+  justify-content: space-around;
+`;
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -26,6 +39,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <ForceFlex>
+        <CharacterCard propsName={apiData} />
+      </ForceFlex>
     </div>
   );
 }
